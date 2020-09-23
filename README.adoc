@@ -1,5 +1,5 @@
 :spring_version: current
-:spring_boot_version: 2.2.2.RELEASE
+:spring_boot_version: 2.3.4.RELEASE
 :toc:
 :icons: font
 :source-highlighter: prettify
@@ -66,7 +66,8 @@ include::complete/src/main/resources/schema.sql[]
 
 Here you have a `customer` table with three columns: `id`, `first_name`, and `last_name`.
 The `id` column is auto-incremented, the other columns follow the default snake case naming scheme.
-Spring Boot's auto-configuration picks up the `schema.sql` file during application startup to initialize the database schema.
+Later on, we need to register a `ConnectionFactoryInitializer` to pick up the `schema.sql` file during application startup to initialize the database schema.
+Because the H2 driver is on the class path and we haven't specified a connection URL, Spring Boot starts an embedded H2 database.
 
 [[entity]]
 == Define a Simple Entity
@@ -136,7 +137,7 @@ include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/
 
 Now you need to modify the simple class that the Initializr created for you.
 To get output (to the console, in this example), you need to set up a logger.
-Then you need to set up some data and use it to generate output.
+Then you need to set up the initializer to setup the schema and some data and use it to generate output.
 The following listing shows the finished `AccessingDataR2dbcApplication` class (in `src/main/java/com/example/accessingdatar2dbc/AccessingDataR2dbcApplication.java`):
 
 ====
