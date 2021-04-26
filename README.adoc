@@ -14,9 +14,9 @@ You will build an application that stores `Customer` POJOs (Plain Old Java Objec
 == What you'll need
 
 :java_version: 1.8
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/prereq_editor_jdk_buildtools.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/prereq_editor_jdk_buildtools.adoc[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/how_to_complete_this_guide.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/how_to_complete_this_guide.adoc[]
 
 
 [[scratch]]
@@ -139,7 +139,7 @@ include::initial/src/main/java/com/example/accessingdatar2dbc/AccessingDataR2dbc
 ----
 ====
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/spring-boot-application-new-path.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/spring-boot-application-new-path.adoc[]
 
 Now you need to modify the simple class that the Initializr created for you.
 To get output (to the console, in this example), you need to set up a logger.
@@ -167,9 +167,9 @@ In a typical reactive application, the resulting `Mono` or `Flux` would represen
 NOTE: By default, Spring Boot enables R2DBC repository support and looks in the package (and its subpackages) where `@SpringBootApplication` is located.
 If your configuration has R2DBC repository interface definitions located in a package that is not visible, you can point out alternate packages by using `@EnableR2dbcRepositories` and its type-safe `basePackageClasses=MyRepository.class` parameter.
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/build_an_executable_jar_mainhead.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/build_an_executable_jar_mainhead.adoc[]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/build_an_executable_jar_with_both.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/build_an_executable_jar_with_both.adoc[]
 
 When you run your application, you should see output similar to the following:
 
@@ -201,4 +201,4 @@ The following guides may also be helpful:
 
 * https://spring.io/guides/gs/gs-spring-data-reactive-redis[Accessing Data Reactively with Redis]
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc[]
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/footer.adoc[]
