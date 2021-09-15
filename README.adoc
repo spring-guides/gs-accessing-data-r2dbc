@@ -6,12 +6,12 @@
 :project_id: gs-accessing-data-r2dbc
 This guide walks you through the process of building an application that uses Spring Data R2DBC to store and retrieve data in a relational database using reactive database drivers.
 
-== What you'll build
+== What You Will build
 
 You will build an application that stores `Customer` POJOs (Plain Old Java Objects) in a memory-based database.
 
 
-== What you'll need
+== What You Need
 
 :java_version: 1.8
 include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/prereq_editor_jdk_buildtools.adoc[]
@@ -22,31 +22,7 @@ include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/
 [[scratch]]
 == Starting with Spring Initializr
 
-If you use Maven, visit the https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.3.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=accessing-data-r2dbc&name=accessing-data-r2dbc&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.accessing-data-r2dbc&dependencies=data-r2dbc,h2[Spring Initializr] to generate a new project with the required dependencies (Spring Data R2DBC and H2 Database).
-
-The following listing shows the `pom.xml` file created when you choose Maven:
-
-====
-[src,xml]
-----
-include::complete/pom.xml[]
-----
-====
-
-If you use Gradle, visit the https://start.spring.io/#!type=gradle-project&language=java&platformVersion=2.4.3.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=accessing-data-r2dbc&name=accessing-data-r2dbc&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.accessing-data-r2dbc&dependencies=data-r2dbc,h2[Spring Initializr] to generate a new project with the required dependencies (Spring Data R2DBC and H2 Database).
-
-The following listing shows the `build.gradle` file created when you choose Gradle:
-
-====
-[src,gradle]
-----
-include::complete/build.gradle[]
-----
-====
-
-=== Manual Initialization (optional)
-
-If you want to initialize the project manually rather than use the links shown earlier, follow the steps given below:
+To initialize the project:
 
 . Navigate to https://start.spring.io.
 This service pulls in all the dependencies you need for an application and does most of the setup for you.
@@ -56,6 +32,8 @@ This service pulls in all the dependencies you need for an application and does 
 . Download the resulting ZIP file, which is an archive of a web application that is configured with your choices.
 
 NOTE: If your IDE has the Spring Initializr integration, you can complete this process from your IDE.
+
+NOTE: You can also fork the project from Github and open it in your IDE or other editor.
 
 [[initial]]
 == Define a Schema
