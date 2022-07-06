@@ -179,6 +179,6 @@ Congratulations! You have written a simple application that uses Spring Data R2D
 
 The following guides may also be helpful:
 
-* https://spring.io/guides/gs/gs-spring-data-reactive-redis[Accessing Data Reactively with Redis]
+* https://spring.io/guides/gs/spring-data-reactive-redis[Accessing Data Reactively with Redis]
 
 include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/main/footer.adoc[]
