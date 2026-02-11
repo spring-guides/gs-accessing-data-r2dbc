@@ -1,11 +1,12 @@
 package com.example.accessingdatar2dbc;
 
+import org.jspecify.annotations.Nullable;
 import org.springframework.data.annotation.Id;
 
 public class Customer {
 
     @Id
-    private Long id;
+    private @Nullable Long id;
 
     private final String firstName;
 
